@@ -8,162 +8,259 @@
         body{
             overflow: hidden;
         }
-        section{
-            width: 100%;
-            height: 650px;
-            /*padding: 20px;*/
+        header>nav>dl>dd{
+            display: inline;
+        }
+        header>nav{
+            position: absolute;
+            width: fit-content;
+            right: 10px;
+        }
+        header{
             position: relative;
-            border: solid red 2px;
-
+            padding: 10px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            height: 50px;
         }
-        section>div:first-child{
-            border: solid black 2px;
-            width: 1350px;
-            height: 75px;
-            background: white;
+        header>img{
             position: absolute;
-        }
-        section>div:first-child>img{
-            position: absolute;
+            top: 20px;
             left: 0;
         }
-        section>div:first-child>nav{
-            position: absolute;
-            right: 0;
+        main{
+            position: relative;
         }
-        section>div:first-child>nav>a:first-child{
-            padding: 10px;
-        }
-        section>div:first-child>nav>a:nth-child(2){
-            padding: 10px;
-        }
-        section>div:first-child>nav>a:nth-child(3){
-            padding: 10px;
-        }
-        section>div:first-child>nav>a:nth-child(4){
-            padding: 10px;
-        }
-        section>div:nth-child(2){
+        main>aside{
             background: purple;
             position: absolute;
-            top: 75px;
-            height: calc(100% - 75px);
-            width: 15%;
-            display: inline-block;
-        }
-        section>div:nth-child(2)>nav>a:first-child{
-            padding: 20px;
-        }
-        section>div:nth-child(2)>nav>a:nth-child(2){
-            padding: 20px;
-        }
-        section>div:nth-child(2)>nav>a:nth-child(3){
-            padding: 20px;
-        }
-        section>div:nth-child(2)>nav>a:nth-child(4){
-            padding: 20px;
-        }
-        section>div:nth-child(3){
-            border: solid 2px green;
-            background: lightgray;
-            width: 28%;
-            height: 200px;
-            display: inline-block;
-            position: relative;
-            left: 15%;
-            top: 75px;
-
-        }
-        section>div:nth-child(3)>img{
-            position: absolute;
-            bottom: 0;
             top: 0;
+            bottom: 0;
+            width: 200px;
+        }
+        main>aside>nav>dl>dd{
+            margin-bottom: 10px;
+        }
+        main>section{
+            margin-left: 200px;
+        }
+        main>section>p{
+            margin: 0;
+        }
+        main>section>div>div{
+            background: lightgray;
+            width: calc(100%/3);
+            height: 300px;
+            border: 1px solid green;
+            display: inline-block;
+            /*position: absolute;*/
+            margin-right: -10px;
+            background-position: center;
+            box-sizing: border-box;
+        }
+        /*main>section>div>div:nth-child(2){*/
+        /*    right: 0;*/
+        /*}*/
+        /*main>section>div>div:nth-child(3){*/
+        /*    right: 0;*/
+        /*    left: 0;*/
+        /*    margin: auto;*/
+        /*}*/
+        footer{
+            background-color: gray;
+            height: 50px;
+            position: relative;
+        }
+        footer>span{
+            position: absolute;
             left: 0;
             right: 0;
-            margin: auto;
-        }
-        section>div:nth-child(4){
-            border: solid 2px green;
-            background: lightgray;
-            width: 28%;
-            height: 200px;
-            display: inline-block;
-            position: relative;
-            left: 15%;
-            top: 75px;
-        }
-        section>div:nth-child(4)>img{
-            position: absolute;
             bottom: 0;
             top: 0;
-            left: 0;
-            right: 0;
             margin: auto;
+            height: 10px;
+            display: block;
+            width: fit-content;
+            color: white;
         }
+        /*section{*/
+        /*    width: 100%;*/
+        /*    height: 650px;*/
+        /*    !*padding: 20px;*!*/
+        /*    position: relative;*/
+        /*    border: solid red 2px;*/
 
-        section>div:nth-child(5){
-            border: solid 2px green;
-            background: lightgray;
-            width: 27%;
-            height: 200px;
-            display: inline-block;
-            position: relative;
-            left: 15%;
-            top: 75px;
-        }
-        section>div:nth-child(5)>img{
-            position: absolute;
-            bottom: 0;
-            top: 0;
-            left: 0;
-            right: 0;
-            margin: auto;
-        }
+        /*}*/
 
-        section>div:nth-child(6){
-            top: 275px;
-            left: 205px;
-            position: absolute;
-        }
+        /*section>div:nth-child(2){*/
+        /*    background: purple;*/
+        /*    position: absolute;*/
+        /*    !*top: 75px;*!*/
+        /*    top:0;*/
+        /*    bottom: 0;*/
+        /*    width: 15%;*/
+        /*    display: inline-block;*/
+        /*}*/
+        /*section>div:nth-child(2)>nav>a:first-child{*/
+        /*    padding: 20px;*/
+        /*}*/
+        /*section>div:nth-child(2)>nav>a:nth-child(2){*/
+        /*    padding: 20px;*/
+        /*}*/
+        /*section>div:nth-child(2)>nav>a:nth-child(3){*/
+        /*    padding: 20px;*/
+        /*}*/
+        /*section>div:nth-child(2)>nav>a:nth-child(4){*/
+        /*    padding: 20px;*/
+        /*}*/
+        /*section>div:nth-child(3){*/
+        /*    border: solid 2px green;*/
+        /*    background: lightgray;*/
+        /*    width: 28%;*/
+        /*    height: 200px;*/
+        /*    display: inline-block;*/
+        /*    position: relative;*/
+        /*    left: 15%;*/
+        /*    !*top: 75px;*!*/
+
+        /*}*/
+        /*section>div:nth-child(3)>img{*/
+        /*    position: absolute;*/
+        /*    bottom: 0;*/
+        /*    top: 0;*/
+        /*    left: 0;*/
+        /*    right: 0;*/
+        /*    margin: auto;*/
+        /*}*/
+        /*section>div:nth-child(4){*/
+        /*    border: solid 2px green;*/
+        /*    background: lightgray;*/
+        /*    width: 28%;*/
+        /*    height: 200px;*/
+        /*    display: inline-block;*/
+        /*    position: relative;*/
+        /*    left: 15%;*/
+        /*    !*top: 75px;*!*/
+        /*}*/
+        /*section>div:nth-child(4)>img{*/
+        /*    position: absolute;*/
+        /*    bottom: 0;*/
+        /*    top: 0;*/
+        /*    left: 0;*/
+        /*    right: 0;*/
+        /*    margin: auto;*/
+        /*}*/
+
+        /*section>div:nth-child(5){*/
+        /*    border: solid 2px green;*/
+        /*    background: lightgray;*/
+        /*    width: 27%;*/
+        /*    height: 200px;*/
+        /*    display: inline-block;*/
+        /*    position: relative;*/
+        /*    left: 15%;*/
+        /*    !*top: 75px;*!*/
+        /*}*/
+        /*section>div:nth-child(5)>img{*/
+        /*    position: absolute;*/
+        /*    bottom: 0;*/
+        /*    top: 0;*/
+        /*    left: 0;*/
+        /*    right: 0;*/
+        /*    margin: auto;*/
+        /*}*/
+
+        /*section>div:nth-child(6){*/
+        /*    !*top: 275px;*!*/
+        /*    left: 205px;*/
+        /*    position: absolute;*/
+        /*}*/
+        /*section>div:nth-child(6)>p{*/
+        /*    margin: 0;*/
+        /*}*/
     </style>
 </head>
 <body>
-    <section>
-        <div>
-            <img src="assets/image/img.png" alt="ijse" height="50px">
+<header>
+    <img src="assets/image/img.png" alt="ijse" width="150px" title="ijse logo">
+    <nav>
+        <dl>
+            <dd>Home</dd>
+            <dd>Service</dd>
+            <dd>Contact</dd>
+            <dd>About Us</dd>
+        </dl>
+    </nav>
+</header>
+    <main>
+        <aside>
             <nav>
-                <a href="" >Home</a>
-                <a href="">Services</a>
-                <a href="">Contact</a>
-                <a href="">About Us</a>
+                <dl>
+                    <dd>Home</dd>
+                    <dd>Service</dd>
+                    <dd>Contact</dd>
+                    <dd>About Us</dd>
+                </dl>
             </nav>
-        </div>
-        <div>
-            <nav>
-                <a href="" >Home</a><br>
-                <a href="">Services</a><br>
-                <a href="">Contact</a><br>
-                <a href="">About Us</a><br>
-            </nav>
-        </div>
-        <div>
-            <img src="assets/image/img_1.png" alt="">
-        </div>
-        <div>
-            <img src="assets/image/img_1.png" alt="">
-        </div>
-        <div>
-            <img src="assets/image/img_1.png" alt="">
-        </div>
-        <div>
+        </aside>
+        <section>
+
+            <div>
+                <div>
+                    <img src="assets/image/IMG_3878.gif" alt="gif" title="gif">
+                </div>
+                <div>
+                    <img src="assets/image/IMG_3878.gif" alt="gif" title="gif">
+                </div>
+                <div>
+                    <img src="assets/image/IMG_3878.gif" alt="gif" title="gif">
+                </div>
+            </div>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem consequatur consequuntur culpa eum fugit id illum, minus molestiae, nam nemo officia quis quo repellat soluta sunt tempore ut! Beatae, eveniet.</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem consequatur consequuntur culpa eum fugit id illum, minus molestiae, nam nemo officia quis quo repellat soluta sunt tempore ut! Beatae, eveniet.</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem consequatur consequuntur culpa eum fugit id illum, minus molestiae, nam nemo officia quis quo repellat soluta sunt tempore ut! Beatae, eveniet.</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem consequatur consequuntur culpa eum fugit id illum, minus molestiae, nam nemo officia quis quo repellat soluta sunt tempore ut! Beatae, eveniet.</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem consequatur consequuntur culpa eum fugit id illum, minus molestiae, nam nemo officia quis quo repellat soluta sunt tempore ut! Beatae, eveniet.</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem consequatur consequuntur culpa eum fugit id illum, minus molestiae, nam nemo officia quis quo repellat soluta sunt tempore ut! Beatae, eveniet.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem consequatur consequuntur culpa eum fugit id illum, minus molestiae, nam nemo officia quis quo repellat soluta sunt tempore ut! Beatae, eveniet.</p>
-        </div>
-    </section>
+<!--            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem consequatur consequuntur culpa eum fugit id illum, minus molestiae, nam nemo officia quis quo repellat soluta sunt tempore ut! Beatae, eveniet.</p>-->
+        </section>
+    </main>
+    <footer>
+        <span>DEVELOPED BY IJSE</span>
+    </footer>
+<!--<section>-->
+<!--            <div></div>-->
+<!--            <div>-->
+<!--                <nav>-->
+<!--                    <dl>-->
+<!--                        <dd>Home</dd>-->
+<!--                        <dd>Service</dd>-->
+<!--                        <dd>Contact</dd>-->
+<!--                        <dd>About Us</dd>-->
+<!--                    </dl>-->
+<!--                </nav>-->
+<!--            </div>-->
+<!--            <div>-->
+<!--                <img src="assets/image/img_1.png" alt="">-->
+<!--            </div>-->
+<!--            <div>-->
+<!--                <img src="assets/image/img_1.png" alt="">-->
+<!--            </div>-->
+<!--            <div>-->
+<!--                <img src="assets/image/img_1.png" alt="">-->
+<!--            </div>-->
+<!--            <div>-->
+<!--                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem consequatur consequuntur culpa eum fugit id illum, minus molestiae, nam nemo officia quis quo repellat soluta sunt tempore ut! Beatae, eveniet.</p>-->
+<!--                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem consequatur consequuntur culpa eum fugit id illum, minus molestiae, nam nemo officia quis quo repellat soluta sunt tempore ut! Beatae, eveniet.</p>-->
+<!--                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem consequatur consequuntur culpa eum fugit id illum, minus molestiae, nam nemo officia quis quo repellat soluta sunt tempore ut! Beatae, eveniet.</p>-->
+<!--                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem consequatur consequuntur culpa eum fugit id illum, minus molestiae, nam nemo officia quis quo repellat soluta sunt tempore ut! Beatae, eveniet.</p>-->
+<!--                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem consequatur consequuntur culpa eum fugit id illum, minus molestiae, nam nemo officia quis quo repellat soluta sunt tempore ut! Beatae, eveniet.</p>-->
+<!--                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem consequatur consequuntur culpa eum fugit id illum, minus molestiae, nam nemo officia quis quo repellat soluta sunt tempore ut! Beatae, eveniet.</p>-->
+<!--                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem consequatur consequuntur culpa eum fugit id illum, minus molestiae, nam nemo officia quis quo repellat soluta sunt tempore ut! Beatae, eveniet.</p>-->
+<!--            </div>-->
+<!--</section>-->
+<!--<footer>-->
+<!--    <span>DEVELOPED BY IJSE</span>-->
+<!--</footer>-->
+
 </body>
 </html>
